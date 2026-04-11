@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - Episode</title>
+  <meta name="description" content="Episodeアプリのプライバシーポリシー">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0F0F1A;
+      --card: #1A1A2E;
+      --accent: #7F77DD;
+      --accent-light: #A09AE8;
+      --text: #E8E8F0;
+      --sub: #9090A8;
+      --border: #2A2A40;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+      line-height: 1.8;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(15,15,26,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-size: 20px; font-weight: 700; color: var(--accent); text-decoration: none; }
+    .nav-back { color: var(--sub); text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; transition: color .2s; }
+    .nav-back:hover { color: var(--text); }
+
+    .content { max-width: 720px; margin: 0 auto; padding: 88px 24px 64px; }
+    .page-title { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .page-date { font-size: 14px; color: var(--sub); margin-bottom: 48px; }
+
+    h2 { font-size: 20px; font-weight: 700; color: var(--accent-light); margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    p { font-size: 15px; color: var(--sub); margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { font-size: 15px; color: var(--sub); margin-bottom: 6px; }
+    strong { color: var(--text); }
+
+    .highlight-box {
+      background: rgba(127,119,221,0.1);
+      border: 1px solid rgba(127,119,221,0.25);
+      border-radius: 12px; padding: 20px 24px; margin: 24px 0;
+    }
+    .highlight-box p { margin: 0; color: var(--text); font-weight: 500; }
+
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th { background: var(--card); color: var(--text); font-weight: 600; padding: 12px 16px; text-align: left; border: 1px solid var(--border); }
+    td { padding: 12px 16px; border: 1px solid var(--border); color: var(--sub); vertical-align: top; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; color: var(--sub); font-size: 13px; }
+    footer a { color: var(--sub); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/ja/" class="nav-logo">Episode</a>
+    <a href="/ja/" class="nav-back">← ホームへ</a>
+  </nav>
+
+  <div class="content">
+    <h1 class="page-title">プライバシーポリシー</h1>
+    <p class="page-date">施行日: 2026年4月11日 | 最終更新: 2026年4月11日</p>
+
+    <div class="highlight-box">
+      <p>📌 Episodeはユーザーの個人情報を収集・保存・送信しません。すべてのデータはユーザーのデバイス内にのみ保存されます。</p>
+    </div>
+
+    <h2>1. 概要</h2>
+    <p>Episode（以下「本アプリ」）は、写真と音声を一緒に記録する個人アルバムアプリです。本プライバシーポリシーは、アプリがユーザーの情報をどのように扱うかを説明します。</p>
+    <p>開発者: TomRyu | お問い合わせ: <a href="mailto:contact@episodealbum.com" style="color: var(--accent);">contact@episodealbum.com</a></p>
+
+    <h2>2. 収集する情報</h2>
+    <p>Episodeは<strong>ユーザーの個人識別情報を収集しません。</strong>氏名、メールアドレス、電話番号、アカウント情報などの個人情報は一切要求・保存しません。</p>
+    <p>アプリ内で作成されるすべてのデータ（写真、音声録音、テキストメモ、位置情報）は<strong>ユーザーのデバイス内部ストレージにのみ</strong>保管され、外部サーバーへ送信されることはありません。</p>
+
+    <h2>3. アプリの権限と使用目的</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>権限</th>
+          <th>使用目的</th>
+          <th>外部送信</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>カメラ</strong></td>
+          <td>エピソードへの写真撮影</td>
+          <td>なし（端末内保存）</td>
+        </tr>
+        <tr>
+          <td><strong>マイク / 録音</strong></td>
+          <td>写真への音声メモ録音、音声認識（STT）</td>
+          <td>なし（端末内保存）<br><small style="color:var(--sub)">※ STTはOS内蔵の音声認識エンジンを使用</small></td>
+        </tr>
+        <tr>
+          <td><strong>位置情報（任意）</strong></td>
+          <td>エピソードの撮影場所を記録（選択機能）</td>
+          <td>なし（端末内保存）</td>
+        </tr>
+        <tr>
+          <td><strong>写真 / メディアアクセス</strong></td>
+          <td>ギャラリーから写真選択、写真保存</td>
+          <td>なし</td>
+        </tr>
+        <tr>
+          <td><strong>ストレージ</strong></td>
+          <td>ZIPファイルのエクスポート / インポート</td>
+          <td>なし</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. データの保存方法</h2>
+    <p>アプリのすべてのデータは以下の方法でのみ保存されます：</p>
+    <ul>
+      <li>端末内部のSQLiteデータベース（エピソードのテキスト情報）</li>
+      <li>端末内部のファイルシステム（写真・音声ファイル）</li>
+      <li>端末内のSharedPreferences（アプリ設定値）</li>
+    </ul>
+    <p>外部サーバー、クラウドストレージ、第三者サービスへのデータ送信は一切ありません。</p>
+
+    <h2>5. 第三者への提供</h2>
+    <p>Episodeはユーザーのデータをいかなる第三者にも販売・共有・貸与しません。マーケティング目的のデータ活用もありません。</p>
+
+    <h2>6. 音声認識（STT）について</h2>
+    <p>音声テキスト変換機能は、Androidデバイスに内蔵されたGoogle音声認識エンジンを使用します。この処理はデバイスのOS側で行われ、Episodeアプリはそのデータを収集・保存しません。</p>
+    <p>Googleの音声認識エンジンに関するプライバシー処理については、Googleのプライバシーポリシーをご参照ください。</p>
+
+    <h2>7. 子どものプライバシー保護</h2>
+    <p>Episodeは13歳未満の子どもから意図的に個人情報を収集しません。アプリ自体が個人情報を収集しないため、年齢制限はありません。</p>
+
+    <h2>8. データの削除</h2>
+    <p>アプリ内でエピソード・写真・音声ファイルを直接削除できます。アプリをアンインストールすると、端末に保存されたアプリ関連のすべてのデータが削除されます。</p>
+
+    <h2>9. プライバシーポリシーの変更</h2>
+    <p>本ポリシーが変更される場合、このページで公示し、上部の日付を更新します。重要な変更はアプリ内通知でもお知らせします。</p>
+
+    <h2>10. お問い合わせ</h2>
+    <p>プライバシーポリシーに関するご質問は下記までお問い合わせください。</p>
+    <ul>
+      <li>メール: <a href="mailto:contact@episodealbum.com" style="color: var(--accent);">contact@episodealbum.com</a></li>
+      <li>ウェブサイト: <a href="https://episodealbum.com/ja/" style="color: var(--accent);">episodealbum.com/ja/</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Episode. <a href="/ja/">ホームへ</a> · <a href="/privacy.html">한국어</a></p>
+  </footer>
+
+</body>
+</html>

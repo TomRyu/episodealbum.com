@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - Episode</title>
+  <meta name="description" content="Episode 앱 개인정보처리방침">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0F0F1A;
+      --card: #1A1A2E;
+      --accent: #7F77DD;
+      --accent-light: #A09AE8;
+      --text: #E8E8F0;
+      --sub: #9090A8;
+      --border: #2A2A40;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+      line-height: 1.7;
+    }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(15,15,26,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { font-size: 20px; font-weight: 700; color: var(--accent); text-decoration: none; }
+    .nav-back { color: var(--sub); text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px; transition: color .2s; }
+    .nav-back:hover { color: var(--text); }
+
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 88px 24px 64px;
+    }
+    .page-title {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .page-date { font-size: 14px; color: var(--sub); margin-bottom: 48px; }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    p { font-size: 15px; color: var(--sub); margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { font-size: 15px; color: var(--sub); margin-bottom: 6px; }
+    strong { color: var(--text); }
+
+    .highlight-box {
+      background: rgba(127,119,221,0.1);
+      border: 1px solid rgba(127,119,221,0.25);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p { margin: 0; color: var(--text); font-weight: 500; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th {
+      background: var(--card);
+      color: var(--text);
+      font-weight: 600;
+      padding: 12px 16px;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    td {
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      color: var(--sub);
+      vertical-align: top;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      color: var(--sub);
+      font-size: 13px;
+    }
+    footer a { color: var(--sub); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">Episode</a>
+    <a href="/" class="nav-back">← 홈으로</a>
+  </nav>
+
+  <div class="content">
+    <h1 class="page-title">개인정보처리방침</h1>
+    <p class="page-date">시행일: 2026년 4월 11일 | 최종 업데이트: 2026년 4월 11일</p>
+
+    <div class="highlight-box">
+      <p>📌 Episode는 사용자의 개인정보를 수집·저장·전송하지 않습니다. 모든 데이터는 사용자의 기기에만 저장됩니다.</p>
+    </div>
+
+    <h2>1. 개요</h2>
+    <p>Episode(이하 "앱")는 사진과 음성을 함께 기록하는 개인 앨범 앱입니다. 본 개인정보처리방침은 앱이 사용자의 정보를 어떻게 다루는지 설명합니다.</p>
+    <p>앱 개발사: TomRyu | 문의: <a href="mailto:contact@episodealbum.com" style="color: var(--accent);">contact@episodealbum.com</a></p>
+
+    <h2>2. 수집하는 정보</h2>
+    <p>Episode는 <strong>사용자 개인 식별 정보를 수집하지 않습니다.</strong> 이름, 이메일, 전화번호, 계정 정보 등 어떠한 개인 정보도 요구하거나 저장하지 않습니다.</p>
+    <p>앱에서 생성되는 모든 데이터(사진, 음성 녹음, 텍스트 메모, 위치 정보)는 <strong>사용자의 기기 내부 저장소에만</strong> 보관되며, 외부 서버로 전송되지 않습니다.</p>
+
+    <h2>3. 앱 권한 사용 목적</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>권한</th>
+          <th>사용 목적</th>
+          <th>외부 전송 여부</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>카메라</strong></td>
+          <td>에피소드에 사진 촬영</td>
+          <td>없음 (기기 내 저장)</td>
+        </tr>
+        <tr>
+          <td><strong>마이크 / 녹음</strong></td>
+          <td>사진에 음성 메모 녹음, 음성인식(STT)</td>
+          <td>없음 (기기 내 저장)<br><small style="color:var(--sub)">※ STT는 기기 내 OS 음성인식 엔진 사용</small></td>
+        </tr>
+        <tr>
+          <td><strong>위치 (선택)</strong></td>
+          <td>에피소드 촬영 위치 기록 (선택적 기능)</td>
+          <td>없음 (기기 내 저장)</td>
+        </tr>
+        <tr>
+          <td><strong>사진/미디어 접근</strong></td>
+          <td>갤러리에서 사진 선택, 사진 저장</td>
+          <td>없음</td>
+        </tr>
+        <tr>
+          <td><strong>저장소</strong></td>
+          <td>ZIP 파일 내보내기/가져오기</td>
+          <td>없음</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. 데이터 저장 방식</h2>
+    <p>앱의 모든 데이터는 다음 방식으로만 저장됩니다:</p>
+    <ul>
+      <li>기기 내부 SQLite 데이터베이스 (에피소드 텍스트 정보)</li>
+      <li>기기 내부 파일 시스템 (사진, 음성 파일)</li>
+      <li>기기 내 SharedPreferences (앱 설정값)</li>
+    </ul>
+    <p>외부 서버, 클라우드 스토리지, 제3자 서비스로의 데이터 전송은 없습니다.</p>
+
+    <h2>5. 제3자 공유</h2>
+    <p>Episode는 사용자의 데이터를 어떠한 제3자에게도 판매, 공유, 임대하지 않습니다. 마케팅 목적의 데이터 활용도 없습니다.</p>
+
+    <h2>6. 음성인식(STT) 관련</h2>
+    <p>음성 텍스트 변환 기능은 Android 기기에 내장된 Google 음성인식 엔진을 사용합니다. 이 과정에서 음성 데이터는 기기의 OS 수준에서 처리되며, Episode 앱은 해당 데이터를 수집하거나 저장하지 않습니다.</p>
+    <p>Google 음성인식 엔진의 개인정보 처리에 대해서는 Google의 개인정보처리방침을 참고하세요.</p>
+
+    <h2>7. 어린이 개인정보 보호</h2>
+    <p>Episode는 만 13세 미만 어린이로부터 의도적으로 개인정보를 수집하지 않습니다. 앱 자체적으로 개인정보를 수집하지 않으므로 연령 제한은 없습니다.</p>
+
+    <h2>8. 데이터 삭제</h2>
+    <p>앱 내에서 에피소드와 사진, 음성 파일을 직접 삭제할 수 있습니다. 앱을 삭제하면 기기에 저장된 앱 관련 모든 데이터가 함께 삭제됩니다.</p>
+
+    <h2>9. 개인정보처리방침 변경</h2>
+    <p>본 방침이 변경될 경우 이 페이지를 통해 공지하며, 변경 날짜를 상단에 업데이트합니다. 중요한 변경 사항은 앱 내 공지를 통해서도 안내합니다.</p>
+
+    <h2>10. 문의</h2>
+    <p>개인정보처리방침에 대한 문의사항이 있으시면 아래로 연락해 주세요.</p>
+    <ul>
+      <li>이메일: <a href="mailto:contact@episodealbum.com" style="color: var(--accent);">contact@episodealbum.com</a></li>
+      <li>웹사이트: <a href="https://episodealbum.com" style="color: var(--accent);">episodealbum.com</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Episode. <a href="/">홈으로</a> · <a href="/ja/privacy.html">日本語</a></p>
+  </footer>
+
+</body>
+</html>
