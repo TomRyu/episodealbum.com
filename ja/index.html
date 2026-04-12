@@ -139,6 +139,37 @@
     footer a { color: var(--sub); text-decoration: none; transition: color .2s; }
     footer a:hover { color: var(--accent); }
     .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
+
+    /* CATCHPHRASE */
+    .hero-catchphrase {
+      font-size: clamp(15px, 3vw, 20px) !important;
+      color: var(--accent-light) !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.3px;
+      margin-bottom: 16px !important;
+    }
+
+    /* STORY */
+    .story-section { background: var(--card); border-radius: 24px; padding: 56px 48px; }
+    .story-quote {
+      font-size: clamp(17px, 3vw, 24px);
+      font-weight: 800;
+      color: var(--accent-light);
+      line-height: 1.4;
+      letter-spacing: -0.3px;
+      margin-bottom: 32px;
+      padding-left: 20px;
+      border-left: 3px solid var(--accent);
+    }
+    .story-body { font-size: 16px; color: #B0B0C8; line-height: 1.9; margin-bottom: 0; }
+    .story-author { margin-top: 28px; font-size: 14px; color: var(--sub); }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 16px; }
+      .contact-section { padding: 28px 20px; }
+      .free-badge { min-width: 130px; padding: 16px 20px; }
+      .story-section { padding: 32px 24px; }
+    }
   </style>
 </head>
 <body>
@@ -147,6 +178,7 @@
     <span class="nav-logo">Episode</span>
     <div class="nav-links">
       <a href="#features">機能</a>
+      <a href="#story">開発ストーリー</a>
       <a href="#contact">お問い合わせ</a>
       <a href="privacy.html">プライバシーポリシー</a>
       <a href="/" class="nav-lang">한국어</a>
@@ -160,6 +192,7 @@
         <span>完全無料 · 広告なし · 無制限</span>
       </div>
       <h1>写真と音声で綴る<br>あなただけのアルバム</h1>
+      <p class="hero-catchphrase">日常は写真じゃない、エピソードだ</p>
       <p>大切な瞬間を写真と声で記録しましょう。<br>スライドショーで、あの日の感動をもう一度。</p>
       <div class="hero-buttons">
         <!-- Play Store 公開後に href を更新 -->
@@ -209,6 +242,24 @@
           <h3>音声テキスト検索</h3>
           <p>音声で録音した内容をテキストに変換して検索できます。目的のエピソードをすぐに見つけられます。</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3>いいねリアクション</h3>
+          <p>ZIPでエピソードを共有すると、受け取った相手がアプリから❤️を送れます。ホーム画面でリアルタイムに反応を確認できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="container">
+      <div class="section-label">Story</div>
+      <h2 class="section-title">Episodeを作った理由</h2>
+      <div class="story-section">
+        <p class="story-quote">"日常は写真じゃない、エピソードだ"</p>
+        <p class="story-body">友人や家族との集まりで撮った写真が、LINEやメッセージで何十枚も無機質に送られてくることに、いつも物足りなさを感じていました。旅先や大切な場所の写真を、ただ送るだけではなく、ひとつのエピソードとして包んで、後からでもその感動がそのまま伝わってほしいと思っていました。いつでもその記憶をエピソード単位で振り返ることができ、大切な思い出が家族や子どもたちにも丸ごと伝わっていく——そんな想いからEpisodeを作りました。</p>
+        <p class="story-author">— Episode 開発者</p>
       </div>
     </div>
   </section>

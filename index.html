@@ -194,6 +194,30 @@
     footer a:hover { color: var(--accent); }
     .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
 
+    /* CATCHPHRASE */
+    .hero-catchphrase {
+      font-size: clamp(16px, 3.5vw, 22px) !important;
+      color: var(--accent-light) !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px !important;
+    }
+
+    /* STORY */
+    .story-section { background: var(--card); border-radius: 24px; padding: 56px 48px; }
+    .story-quote {
+      font-size: clamp(18px, 3vw, 26px);
+      font-weight: 800;
+      color: var(--accent-light);
+      line-height: 1.4;
+      letter-spacing: -0.3px;
+      margin-bottom: 32px;
+      padding-left: 20px;
+      border-left: 3px solid var(--accent);
+    }
+    .story-body { font-size: 16px; color: #B0B0C8; line-height: 1.9; margin-bottom: 0; }
+    .story-author { margin-top: 28px; font-size: 14px; color: var(--sub); }
+
     @media (max-width: 600px) {
       nav { padding: 0 16px; }
       .contact-section { padding: 28px 20px; }
@@ -208,6 +232,7 @@
     <span class="nav-logo">Episode</span>
     <div class="nav-links">
       <a href="#features">기능</a>
+      <a href="#story">개발 이야기</a>
       <a href="#contact">문의</a>
       <a href="privacy.html">개인정보처리방침</a>
       <a href="/ja/" class="nav-lang">日本語</a>
@@ -222,6 +247,7 @@
         <span>완전 무료 · 광고 없음 · 무제한</span>
       </div>
       <h1>사진과 음성으로<br>담는 나만의 앨범</h1>
+      <p class="hero-catchphrase">일상은 사진이 아니다, 에피소드다</p>
       <p>소중한 순간을 사진과 함께 목소리로 기록하세요.<br>슬라이드쇼로 그날의 감동을 다시 만납니다.</p>
       <div class="hero-buttons">
         <!-- Play Store 출시 후 href 교체 -->
@@ -272,6 +298,24 @@
           <h3>음성 텍스트 검색</h3>
           <p>음성으로 녹음된 내용을 텍스트로 변환해 검색할 수 있습니다. 원하는 에피소드를 빠르게 찾아보세요.</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon">❤️</div>
+          <h3>좋아요 반응</h3>
+          <p>ZIP으로 에피소드를 공유하면 받은 사람이 앱에서 ❤️를 보낼 수 있습니다. 내 홈 화면에서 실시간으로 반응을 확인하세요.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="container">
+      <div class="section-label">Story</div>
+      <h2 class="section-title">Episode를 만든 이유</h2>
+      <div class="story-section">
+        <p class="story-quote">"일상은 사진이 아니다, 에피소드다"</p>
+        <p class="story-body">친구들, 가족과 함께한 모임에서 찍은 사진이 카카오톡으로 수십 장씩 무미건조하게 전달되는 것이 늘 아쉬웠습니다. 여행지나 소중한 장소의 사진을 그냥 보내는 것이 아니라, 하나의 에피소드로 담아 나중에도 그 감동이 그대로 전해졌으면 했습니다. 언제든지 그 기억을 에피소드 단위로 다시 꺼내 볼 수 있고, 내 소중한 에피소드들이 가족과 아이들에게도 고스란히 전해지길 바라는 마음에서 Episode를 만들었습니다.</p>
+        <p class="story-author">— Episode 개발자</p>
       </div>
     </div>
   </section>
