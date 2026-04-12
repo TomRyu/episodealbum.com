@@ -218,10 +218,76 @@
     .story-body { font-size: 16px; color: #B0B0C8; line-height: 1.9; margin-bottom: 0; }
     .story-author { margin-top: 28px; font-size: 14px; color: var(--sub); }
 
-    @media (max-width: 600px) {
+    /* HAMBURGER */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      margin-left: 8px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all .25s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    @media (max-width: 768px) {
       nav { padding: 0 16px; }
+
+      .nav-hamburger { display: flex; }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0; right: 0;
+        flex-direction: column;
+        background: rgba(15,15,26,0.97);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+        padding: 8px 20px 20px;
+        gap: 0;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a {
+        padding: 13px 0;
+        font-size: 15px;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+      }
+      .nav-links a:last-child { border-bottom: none; }
+      .nav-lang {
+        margin-top: 8px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      section { padding: 56px 20px; }
+      .story-section { padding: 32px 20px; }
       .contact-section { padding: 28px 20px; }
-      .free-badge { min-width: 130px; padding: 16px 20px; }
+      .free-badge { min-width: 120px; padding: 14px 16px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .feature-card { padding: 20px; }
+      .hero { padding: 80px 20px 40px; }
+    }
+
+    @media (max-width: 400px) {
+      .hero h1 { letter-spacing: -1px; }
+      .btn-primary, .btn-secondary { padding: 13px 20px; font-size: 15px; width: 100%; justify-content: center; }
+      .hero-buttons { flex-direction: column; align-items: stretch; }
     }
   </style>
 </head>
@@ -230,14 +296,37 @@
   <!-- NAV -->
   <nav>
     <span class="nav-logo">Episode</span>
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="#features">기능</a>
       <a href="#story">개발 이야기</a>
       <a href="#contact">문의</a>
       <a href="privacy.html">개인정보처리방침</a>
       <a href="/ja/" class="nav-lang">日本語</a>
     </div>
+    <button class="nav-hamburger" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <script>
+    (function() {
+      var btn = document.getElementById('navToggle');
+      var links = document.getElementById('navLinks');
+      btn.addEventListener('click', function() {
+        var open = links.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+        btn.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+      });
+      links.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          links.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', false);
+          btn.setAttribute('aria-label', '메뉴 열기');
+        });
+      });
+    })();
+  </script>
 
   <!-- HERO -->
   <section class="hero">
